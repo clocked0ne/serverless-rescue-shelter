@@ -1,0 +1,39 @@
+{
+  "name": "serverless-rescue-shelter",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Serverless rescue shelter API",
+  "main": "index.js",
+  "scripts": {
+    "test": "node_modules/.bin/mocha --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/clocked0ne/serverless-rescue-shelter.git"
+  },
+  "keywords": [
+    "lambda",
+    "servereless",
+    "rescue",
+    "shelter"
+  ],
+  "author": "Nigel Horton",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "got": "^9.6.0",
+    "http-status": "^1.4.1",
+    "lodash": "^4.17.15",
+    "luxon": "^1.21.3"
+  },
+  "devDependencies": {
+    "aws-sdk": "^2.580.0",
+    "chai": "^4.2.0",
+    "lambda-tester": "^4.0.0",
+    "mocha": "^6.2.0",
+    "sinon": "^7.4.2"
+  },
+  "engines": {
+    "node": "^12.13.1",
+    "npm": "^6.12.1"
+  }
+}
