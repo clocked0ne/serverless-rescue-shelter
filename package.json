@@ -5,7 +5,9 @@
   "description": "Serverless rescue shelter API",
   "main": "index.js",
   "scripts": {
-    "test": "node_modules/.bin/mocha --recursive"
+    "pretest": "eslint \"**/*.js\" --ignore-pattern node_modules/",
+    "test": "node_modules/.bin/mocha --recursive",
+    "start": "node app.js"
   },
   "repository": {
     "type": "git",
@@ -20,6 +22,7 @@
   "author": "Nigel Horton",
   "license": "UNLICENSED",
   "dependencies": {
+    "connect": "^3.7.0",
     "got": "^9.6.0",
     "http-status": "^1.4.1",
     "lodash": "^4.17.15",
@@ -28,8 +31,10 @@
   "devDependencies": {
     "aws-sdk": "^2.580.0",
     "chai": "^4.2.0",
+    "eslint": "^6.7.1",
     "lambda-tester": "^4.0.0",
     "mocha": "^6.2.0",
+    "mockdate": "^2.0.5",
     "sinon": "^7.4.2"
   },
   "engines": {

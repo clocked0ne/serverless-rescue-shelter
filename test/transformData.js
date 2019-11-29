@@ -1,6 +1,8 @@
 'use strict';
 
 const expect = require('chai').expect;
+const MockDate = require('mockdate');
+MockDate.set('2019-11-28');
 const transformData = require('../lib/transformData');
 const DOGS = require('./fixtures/dogs').body;
 const CATS = require('./fixtures/cats').body;
