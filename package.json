@@ -29,7 +29,7 @@
     "luxon": "^1.21.3"
   },
   "devDependencies": {
-    "aws-sdk": "^2.580.0",
+    "aws-sdk": "^2.814.0",
     "chai": "^4.2.0",
     "eslint": "^6.7.1",
     "lambda-tester": "^4.0.0",
